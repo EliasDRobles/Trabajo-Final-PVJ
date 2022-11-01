@@ -14,13 +14,13 @@ public class ResetPlayer : MonoBehaviour
         switch (nivel)
         {
             case 1:
-                other.transform.position = new Vector3(-14, 17, 0);
+                other.transform.position = new Vector3(-50, 16, 15);
                 break;
             case 2:
                 other.transform.position = new Vector3(0, 17, 15);
                 break;
             case 3:
-                other.transform.position = new Vector3(14, 17, 0);
+                other.transform.position = new Vector3(50, 16, 15);
                 break;
             case 4:
                 other.transform.position = new Vector3(0, 2, 0);
