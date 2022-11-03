@@ -200,8 +200,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+--- !u!1 &53206978 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2739025221902775053, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+  m_PrefabInstance: {fileID: 1987831256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &53206979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53206978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181e406c5898ca24bb05eba84a5e6069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VelMov: 5
+  VelRot: 200
+  x: 0
+  y: 0
+  speedZ: 5
+  enTierra: 0
+  rb: {fileID: 53206984}
+  fuerzaSalto: 5
+  Mask:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!54 &53206984 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 6287757210695341872, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+  m_PrefabInstance: {fileID: 1987831256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &53206986 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3263183668887808439, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+  m_PrefabInstance: {fileID: 1987831256}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &57468604 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1264129012282727004, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
@@ -240,7 +282,7 @@ Transform:
   - {fileID: 1194280317}
   - {fileID: 7821667}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &65038708
 PrefabInstance:
@@ -365,6 +407,10 @@ PrefabInstance:
     - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Name
       value: Plataforma02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
@@ -599,7 +645,7 @@ Transform:
   - {fileID: 864709948}
   - {fileID: 2096838227}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &121004304
 GameObject:
@@ -750,6 +796,10 @@ PrefabInstance:
     - target: {fileID: 4143081389730563752, guid: 91f0f8a986cc26b49aafdcc021fe46d8, type: 3}
       propertyPath: m_Name
       value: Generador01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143081389730563752, guid: 91f0f8a986cc26b49aafdcc021fe46d8, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4143081389730563755, guid: 91f0f8a986cc26b49aafdcc021fe46d8, type: 3}
       propertyPath: m_RootOrder
@@ -957,6 +1007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlataformaGrande
       objectReference: {fileID: 0}
+    - target: {fileID: 6949191358610730310, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
 --- !u!1001 &170886924
@@ -1018,6 +1072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlataformaGrande
       objectReference: {fileID: 0}
+    - target: {fileID: 6949191358610730310, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
 --- !u!4 &173359002 stripped
@@ -1035,6 +1093,94 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 109367341190589570, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
   m_PrefabInstance: {fileID: 8645777335548822313}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &217682736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 217682737}
+  m_Layer: 0
+  m_Name: ManoPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &217682737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217682736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.019, z: 0.032}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1914628387}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &219211915
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 53206986}
+    m_Modifications:
+    - target: {fileID: 7688830662521289536, guid: 04837eaa3a11ae640b766d896b59bc23, type: 3}
+      propertyPath: m_Name
+      value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688830662521289541, guid: 04837eaa3a11ae640b766d896b59bc23, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688830662521289541, guid: 04837eaa3a11ae640b766d896b59bc23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.060001254
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688830662521289541, guid: 04837eaa3a11ae640b766d896b59bc23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4300001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688830662521289541, guid: 04837eaa3a11ae640b766d896b59bc23, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.3000088
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688830662521289541, guid: 04837eaa3a11ae640b766d896b59bc23, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9973819
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688830662521289541, guid: 04837eaa3a11ae640b766d896b59bc23, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.056826353
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688830662521289541, guid: 04837eaa3a11ae640b766d896b59bc23, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.041362163
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688830662521289541, guid: 04837eaa3a11ae640b766d896b59bc23, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.017005555
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688830662521289541, guid: 04837eaa3a11ae640b766d896b59bc23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 6.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688830662521289541, guid: 04837eaa3a11ae640b766d896b59bc23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 4.652
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688830662521289541, guid: 04837eaa3a11ae640b766d896b59bc23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -1.686
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 04837eaa3a11ae640b766d896b59bc23, type: 3}
 --- !u!1 &250952198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,6 +1418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma03
       objectReference: {fileID: 0}
+    - target: {fileID: 1532827879693422826, guid: ad82bd11e76dcbb4f842a7c36c8b4d43, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8219187318738023611, guid: ad82bd11e76dcbb4f842a7c36c8b4d43, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1395,6 +1545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!1001 &373992443
@@ -1479,6 +1633,10 @@ PrefabInstance:
     - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Name
       value: Plataforma02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7941455186283516818, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1649,6 +1807,10 @@ PrefabInstance:
     - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: m_Name
       value: Plataforma01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -1826,6 +1988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!1001 &453787680
@@ -1894,6 +2060,10 @@ PrefabInstance:
     - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: m_Name
       value: Plataforma01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -2196,6 +2366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Generador03
       objectReference: {fileID: 0}
+    - target: {fileID: 6987102816716051510, guid: 0da1540117096964186b4de5c449315f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0da1540117096964186b4de5c449315f, type: 3}
 --- !u!1001 &478189683
@@ -2264,6 +2438,10 @@ PrefabInstance:
     - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: m_Name
       value: Plataforma01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -2579,6 +2757,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Generador01
       objectReference: {fileID: 0}
+    - target: {fileID: 4143081389730563752, guid: 91f0f8a986cc26b49aafdcc021fe46d8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4143081389730563755, guid: 91f0f8a986cc26b49aafdcc021fe46d8, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2708,6 +2890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlataformaGrande
       objectReference: {fileID: 0}
+    - target: {fileID: 6949191358610730310, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
 --- !u!1001 &549927009
@@ -2777,6 +2963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!1001 &568263279
@@ -2789,6 +2979,10 @@ PrefabInstance:
     - target: {fileID: 4697799323918943339, guid: b1094e249048b444aa21ae58492bc318, type: 3}
       propertyPath: m_Name
       value: Soga
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697799323918943339, guid: b1094e249048b444aa21ae58492bc318, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4697799323918943343, guid: b1094e249048b444aa21ae58492bc318, type: 3}
       propertyPath: m_RootOrder
@@ -2915,6 +3109,10 @@ PrefabInstance:
     - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: m_Name
       value: Plataforma01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -3052,7 +3250,7 @@ Transform:
   - {fileID: 850308114}
   - {fileID: 1293848720}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &635406720
 PrefabInstance:
@@ -3112,6 +3310,10 @@ PrefabInstance:
     - target: {fileID: 6949191358610730310, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
       propertyPath: m_Name
       value: PlataformaGrande
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949191358610730310, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
@@ -3218,6 +3420,10 @@ PrefabInstance:
     - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: m_Name
       value: Plataforma01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -3655,6 +3861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlataformaGrande
       objectReference: {fileID: 0}
+    - target: {fileID: 6949191358610730310, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
 --- !u!4 &770385670 stripped
@@ -4016,6 +4226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma02
       objectReference: {fileID: 0}
+    - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7941455186283516818, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -4147,6 +4361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!1001 &883459292
@@ -4211,6 +4429,10 @@ PrefabInstance:
     - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: m_Name
       value: Plataforma01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -4277,6 +4499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!1001 &891295898
@@ -4289,6 +4515,10 @@ PrefabInstance:
     - target: {fileID: 4697799323918943339, guid: b1094e249048b444aa21ae58492bc318, type: 3}
       propertyPath: m_Name
       value: Soga
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697799323918943339, guid: b1094e249048b444aa21ae58492bc318, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4697799323918943343, guid: b1094e249048b444aa21ae58492bc318, type: 3}
       propertyPath: m_RootOrder
@@ -4415,6 +4645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!1 &907903661
@@ -4494,6 +4728,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1264129012282727004, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
   m_PrefabInstance: {fileID: 964616414}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &953318166 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1567578305823038970, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
+  m_PrefabInstance: {fileID: 993141981}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &953318167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953318166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.3804102, z: 0.6162287}
+  m_Center: {x: 0, y: 0.5220771, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4571,13 +4823,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 20, z: 5.8}
+  m_LocalRotation: {x: 0.2588191, y: -0, z: -0, w: 0.9659258}
+  m_LocalPosition: {x: -25.05, y: 20.02, z: 10.967323}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -4591,7 +4843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11e7487543904d489b7fe6f4f5a2509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jugador: {fileID: 1931592331}
+  jugador: {fileID: 0}
 --- !u!1001 &964616414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4655,6 +4907,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlataformaGrande
       objectReference: {fileID: 0}
+    - target: {fileID: 6949191358610730310, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
 --- !u!1 &977268507
@@ -4693,7 +4949,7 @@ Transform:
   - {fileID: 1979844230}
   - {fileID: 1077469713}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &993141981
 PrefabInstance:
@@ -4762,11 +5018,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Premio
       objectReference: {fileID: 0}
+    - target: {fileID: 1567578305823038970, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
+      propertyPath: m_TagString
+      value: Premio
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499648416074446625, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6499648416074446625, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
       propertyPath: m_Constraints
-      value: 126
+      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents:
+    - {fileID: 0}
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
 --- !u!1 &1001895396
@@ -5122,6 +5387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!4 &1187913357 stripped
@@ -5242,6 +5511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soga
       objectReference: {fileID: 0}
+    - target: {fileID: 4697799323918943339, guid: b1094e249048b444aa21ae58492bc318, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4697799323918943343, guid: b1094e249048b444aa21ae58492bc318, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -5316,6 +5589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma03
       objectReference: {fileID: 0}
+    - target: {fileID: 1532827879693422826, guid: ad82bd11e76dcbb4f842a7c36c8b4d43, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8219187318738023611, guid: ad82bd11e76dcbb4f842a7c36c8b4d43, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5362,6 +5639,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad82bd11e76dcbb4f842a7c36c8b4d43, type: 3}
+--- !u!1 &1268114779 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1567578305823038970, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
+  m_PrefabInstance: {fileID: 1567578304717940283}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1268114783
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268114779}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9221419, y: 1.0296127, z: 0.5823792}
+  m_Center: {x: -0.038929038, y: 0.4749303, z: 0}
 --- !u!1001 &1273875742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5428,6 +5723,10 @@ PrefabInstance:
     - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: m_Name
       value: Plataforma01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -5502,6 +5801,10 @@ PrefabInstance:
     - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: m_Name
       value: Plataforma01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -5670,9 +5973,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Premio
       objectReference: {fileID: 0}
+    - target: {fileID: 1567578305823038970, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
+      propertyPath: m_TagString
+      value: Premio
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044964746103795760, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0933881
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044964746103795760, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
+      propertyPath: m_Size.z
+      value: 0.5900186
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044964746103795760, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
+      propertyPath: m_Center.y
+      value: 0.4419806
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499648416074446625, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6499648416074446625, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
       propertyPath: m_Constraints
-      value: 126
+      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -5732,6 +6055,10 @@ PrefabInstance:
     - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Name
       value: Plataforma02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
@@ -5807,6 +6134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!1001 &1355157381
@@ -5879,6 +6210,10 @@ PrefabInstance:
     - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Name
       value: Plataforma02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7941455186283516818, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6087,6 +6422,10 @@ PrefabInstance:
     - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: m_Name
       value: Plataforma01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -6376,6 +6715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!4 &1434254293 stripped
@@ -6393,6 +6736,10 @@ PrefabInstance:
     - target: {fileID: 4697799323918943339, guid: b1094e249048b444aa21ae58492bc318, type: 3}
       propertyPath: m_Name
       value: Soga
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697799323918943339, guid: b1094e249048b444aa21ae58492bc318, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4697799323918943343, guid: b1094e249048b444aa21ae58492bc318, type: 3}
       propertyPath: m_RootOrder
@@ -6882,6 +7229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!1 &1570258975
@@ -6930,7 +7281,7 @@ Transform:
   - {fileID: 1775241911}
   - {fileID: 2040684841}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1611959022
 PrefabInstance:
@@ -7015,6 +7366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma02
       objectReference: {fileID: 0}
+    - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7941455186283516818, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -7080,6 +7435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlataformaGrande
       objectReference: {fileID: 0}
+    - target: {fileID: 6949191358610730310, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
 --- !u!4 &1619597072 stripped
@@ -7141,6 +7500,10 @@ PrefabInstance:
     - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Name
       value: Plataforma02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
@@ -7210,6 +7573,10 @@ PrefabInstance:
     - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: m_Name
       value: Plataforma01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -7382,6 +7749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!4 &1667374846 stripped
@@ -7459,6 +7830,10 @@ PrefabInstance:
     - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Name
       value: Plataforma02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7941455186283516818, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -7720,6 +8095,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlataformaGrande
       objectReference: {fileID: 0}
+    - target: {fileID: 6949191358610730310, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f2868d7401f574b8c67b769672c982, type: 3}
 --- !u!4 &1711683105 stripped
@@ -7834,6 +8213,10 @@ PrefabInstance:
     - target: {fileID: 4697799323918943339, guid: b1094e249048b444aa21ae58492bc318, type: 3}
       propertyPath: m_Name
       value: Soga
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697799323918943339, guid: b1094e249048b444aa21ae58492bc318, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4697799323918943343, guid: b1094e249048b444aa21ae58492bc318, type: 3}
       propertyPath: m_RootOrder
@@ -7985,6 +8368,10 @@ PrefabInstance:
     - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Name
       value: Plataforma02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7941455186283516818, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8212,6 +8599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Generador01
       objectReference: {fileID: 0}
+    - target: {fileID: 4143081389730563752, guid: 91f0f8a986cc26b49aafdcc021fe46d8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4143081389730563755, guid: 91f0f8a986cc26b49aafdcc021fe46d8, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -8266,8 +8657,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1001895397}
     m_Modifications:
     - target: {fileID: -3388113856064830687, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3388113856064830687, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: m_Constraints
       value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: -3388113856064830687, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1090308985486702603, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: seMueve
@@ -8324,6 +8723,14 @@ PrefabInstance:
     - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: m_Name
       value: Plataforma01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983226879437055869, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -8418,6 +8825,10 @@ PrefabInstance:
     - target: {fileID: 6987102816716051510, guid: 0da1540117096964186b4de5c449315f, type: 3}
       propertyPath: m_Name
       value: Generador03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6987102816716051510, guid: 0da1540117096964186b4de5c449315f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0da1540117096964186b4de5c449315f, type: 3}
@@ -8698,6 +9109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!4 &1896775265 stripped
@@ -8705,7 +9120,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3417284366608797026, guid: 83d852740e361a745baab19dd97974d0, type: 3}
   m_PrefabInstance: {fileID: 896624489}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1931592331
+--- !u!1 &1914628386
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8713,131 +9128,58 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1931592336}
-  - component: {fileID: 1931592335}
-  - component: {fileID: 1931592334}
-  - component: {fileID: 1931592333}
-  - component: {fileID: 1931592337}
-  - component: {fileID: 1931592338}
+  - component: {fileID: 1914628387}
+  - component: {fileID: 1914628388}
+  - component: {fileID: 1914628389}
   m_Layer: 0
-  m_Name: Jugador
-  m_TagString: Player
+  m_Name: Mano
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &1931592333
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931592331}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1931592334
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931592331}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: c0e3edf2de5cbc947aa19219bdaf1d3d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1931592335
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931592331}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1931592336
+--- !u!4 &1914628387
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931592331}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -50, y: 16, z: 15}
+  m_GameObject: {fileID: 1914628386}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.271, y: 0.358, z: 0.079}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Children:
+  - {fileID: 217682737}
+  m_Father: {fileID: 53206986}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1931592337
+--- !u!65 &1914628388
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914628386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1914628389
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931592331}
+  m_GameObject: {fileID: 1914628386}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac62e3a91c8d18e49b3011934331c24d, type: 3}
+  m_Script: {fileID: 11500000, guid: b97801ec65b7cc445852486325cd4a0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  salto: {x: 0, y: 0, z: 0}
-  velocidad: 3
-  fuerzaSalto: 3
-  enTierra: 0
-  tienePremio: 0
-  contador: 0
---- !u!54 &1931592338
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931592331}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
+  manoPoint: {fileID: 217682736}
 --- !u!1001 &1935220976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8920,6 +9262,10 @@ PrefabInstance:
     - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Name
       value: Plataforma02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7941455186283516818, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9035,6 +9381,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3417284366608797026, guid: 83d852740e361a745baab19dd97974d0, type: 3}
   m_PrefabInstance: {fileID: 1147216436}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1987831256
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739025221902775053, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+      propertyPath: m_Name
+      value: Perrito
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263183668887808439, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263183668887808439, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -49.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263183668887808439, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263183668887808439, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263183668887808439, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263183668887808439, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263183668887808439, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263183668887808439, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263183668887808439, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263183668887808439, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263183668887808439, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1633829800, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 7c33b4ebda19f7a4d8c85a035c692e2e, type: 3}
 --- !u!1001 &1995658406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9101,6 +9505,10 @@ PrefabInstance:
     - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
       propertyPath: m_Name
       value: Plataforma01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -9175,7 +9583,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2033978648
 GameObject:
@@ -9514,6 +9922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!4 &2092228150 stripped
@@ -9749,7 +10161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1567578304846118267, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.5
+      value: 15.53
       objectReference: {fileID: 0}
     - target: {fileID: 1567578304846118267, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9799,11 +10211,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: Premio
       objectReference: {fileID: 0}
+    - target: {fileID: 1567578305823038970, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
+      propertyPath: m_TagString
+      value: Premio
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499648416074446625, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6499648416074446625, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
       propertyPath: m_Constraints
-      value: 126
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499648416074446625, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
+    - {fileID: 0}
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: aa4aeee95d2bab845909605aa6558034, type: 3}
 --- !u!1 &1730624228067939521
@@ -10004,6 +10429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Generador01
       objectReference: {fileID: 0}
+    - target: {fileID: 4143081389730563752, guid: 91f0f8a986cc26b49aafdcc021fe46d8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4143081389730563755, guid: 91f0f8a986cc26b49aafdcc021fe46d8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -10157,6 +10586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma01
       objectReference: {fileID: 0}
+    - target: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d852740e361a745baab19dd97974d0, type: 3}
 --- !u!1001 &6045670916797102017
@@ -10213,6 +10646,10 @@ PrefabInstance:
     - target: {fileID: 6987102816716051510, guid: 0da1540117096964186b4de5c449315f, type: 3}
       propertyPath: m_Name
       value: Generador03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6987102816716051510, guid: 0da1540117096964186b4de5c449315f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0da1540117096964186b4de5c449315f, type: 3}
@@ -10451,6 +10888,10 @@ PrefabInstance:
     - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
       propertyPath: m_Name
       value: Plataforma02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519434741733329535, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a63c14f68e3764cb6b1446a0008446, type: 3}

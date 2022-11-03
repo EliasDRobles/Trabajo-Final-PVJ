@@ -141,10 +141,10 @@ GameObject:
   - component: {fileID: 1567578304846118267}
   - component: {fileID: 6499648416074446625}
   - component: {fileID: 8137031289402405284}
-  - component: {fileID: 3485632568229662597}
+  - component: {fileID: 3044964746103795760}
   m_Layer: 0
   m_Name: Premio
-  m_TagString: Untagged
+  m_TagString: Premio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,10 +176,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &8137031289402405284
 MonoBehaviour:
@@ -193,19 +193,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa74f77013d59442906ce5df9316c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  esRecogible: 0
-  Bandera: {fileID: 2681969714226174019, guid: eaf1df01392d5cc4f97caefb6ebac7a0, type: 3}
---- !u!64 &3485632568229662597
-MeshCollider:
+--- !u!65 &3044964746103795760
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567578305823038970}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

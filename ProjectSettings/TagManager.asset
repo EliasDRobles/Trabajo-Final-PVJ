@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Bandera
   - Destructor
+  - Premio
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - enTierra
   - Water
   - UI
   - 

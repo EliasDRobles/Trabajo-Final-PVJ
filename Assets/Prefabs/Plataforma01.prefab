@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8983226879437055869}
   - component: {fileID: -3388113856064830687}
   - component: {fileID: 1090308985486702603}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plataforma01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,4 +129,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seMueve: 1
   esAscensor: 0
+  estaGirando: 0
   velocidad: 2
+  velocidadRotacion: 0
