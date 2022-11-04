@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4143081389730563755}
   - component: {fileID: 4143081389730563754}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Generador01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
