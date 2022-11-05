@@ -1068,7 +1068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 559375160}
-  timerTime: 10
+  timerTime: 600
 --- !u!4 &461018849
 Transform:
   m_ObjectHideFlags: 0
@@ -1111,7 +1111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &464395936
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1490,7 +1490,7 @@ GameObject:
   - component: {fileID: 559375161}
   - component: {fileID: 559375160}
   m_Layer: 0
-  m_Name: TimerText
+  m_Name: TiempoJuego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2808,7 +2808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11e7487543904d489b7fe6f4f5a2509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jugador: {fileID: 0}
+  jugador: {fileID: 1060304243}
 --- !u!1 &1001895396
 GameObject:
   m_ObjectHideFlags: 0
@@ -2952,6 +2952,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059252898}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1060304243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7144233215916410269, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
+  m_PrefabInstance: {fileID: 2119112283392065492}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1073016755 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2927446962798470420, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}

@@ -5068,7 +5068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1684897340}
-  timerTime: 10
+  timerTime: 600
 --- !u!1001 &1817413696
 PrefabInstance:
   m_ObjectHideFlags: 0
