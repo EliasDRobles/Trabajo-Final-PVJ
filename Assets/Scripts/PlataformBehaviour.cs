@@ -9,14 +9,14 @@ public class PlataformBehaviour : MonoBehaviour
     [SerializeField]
     private bool seMueve;
     [SerializeField]
-    private bool esAscensor;
-    [SerializeField]
     private bool estaGirando;
     [SerializeField]
     private float velocidad = 2f;
     [SerializeField]
     private float velocidadRotacion;
-    
+    [SerializeField]
+    private bool transportaPersonaje;
+
     //Aqui se decide que hacen segun el tipo de plataforma sea
     void Update()
     {
@@ -28,9 +28,6 @@ public class PlataformBehaviour : MonoBehaviour
         {
             transform.Translate(velocidad * Time.deltaTime, 0, 0);
         }
-        if (esAscensor) {
-            transform.Translate(0, velocidad * Time.deltaTime, 0);
-        }
     }
 
     //Se destruyen al entrar con un objeto con TAG Destructor
@@ -40,5 +37,21 @@ public class PlataformBehaviour : MonoBehaviour
         {
             Destroy(transform.gameObject);
         }        
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (transportaPersonaje)
+        {
+            collision.collider.transform.SetParent(transform);
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if(transportaPersonaje)
+        {
+            collision.collider.transform.SetParent(null);
+        }
     }
 }
