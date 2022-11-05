@@ -18,13 +18,20 @@ public class PlayerMov : MonoBehaviour
     [SerializeField]
     private float fuerzaSalto; // Fuerza de salto
     public LayerMask Mask; // layer del suelo para indicar si esta en el suelo
-   
 
+    public float maxVida;
+    public float actualVida;
+
+    public bool inmortal = false;
+    public float tiempoInmortal = 1.0f;
+
+    public float MaxVida { get => maxVida; set => maxVida = value; }
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        actualVida = maxVida;
     }
  
     // Update is called once per frame
@@ -48,6 +55,12 @@ public class PlayerMov : MonoBehaviour
             Jump(); // llamamos el metodo salto
         }
 
+        if (actualVida > maxVida)
+            actualVida = maxVida;
+
+        if (actualVida <= 0)
+            Muerte();
+
     }
     // metodo para ver si estamos tocando tierra o no y evitar saltar varias veces
     private void CheckTierra() { 
@@ -69,6 +82,31 @@ public class PlayerMov : MonoBehaviour
         rb.AddForce(Vector3.up * fuerzaSalto, ForceMode.Impulse);
 
     }
-  
-    
+
+   /* public void QuitarVida(float daño)
+    {
+        if (inmortal) return;
+
+        actualVida -= daño;
+        StartCoroutine(TiempoInmortal());
+    }
+ 
+    public void DarVida(float vida)
+    {
+        actualVida += vida;
+    } */
+
+    public void Muerte()
+    {
+        Destroy(this.gameObject);
+    }
+
+   /* IEnumerator TiempoInmortal()
+    {
+        inmortal = true;
+        yield return new WaitForSeconds(tiempoInmortal);
+        inmortal = false;
+    }
+   */
+
 }
