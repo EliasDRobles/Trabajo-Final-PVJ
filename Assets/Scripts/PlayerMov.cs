@@ -55,7 +55,7 @@ public class PlayerMov : MonoBehaviour
             Jump(); // llamamos el metodo salto
         }
 
-        if (actualVida > maxVida)
+        if (actualVida - maxVida >= 2)
             actualVida = maxVida;
 
         if (actualVida <= 0)

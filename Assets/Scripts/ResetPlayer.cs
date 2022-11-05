@@ -8,7 +8,7 @@ public class ResetPlayer : MonoBehaviour
 
     [SerializeField]
     private int nivel;
-    public float daño;
+    public float daño = 1.0f;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,8 +16,9 @@ public class ResetPlayer : MonoBehaviour
         switch (nivel)
         {
             case 1:
+                player.MaxVida = player.MaxVida - daño;
                 other.transform.position = new Vector3(-50, 16, 15);
-                    player.MaxVida = player.MaxVida - daño;
+                    
         break;
             case 2:
                 other.transform.position = new Vector3(0, 17, 15);

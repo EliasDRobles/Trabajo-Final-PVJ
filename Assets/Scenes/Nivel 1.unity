@@ -267,6 +267,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2927446962798470421, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2927446962798470421, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2927446962798470427, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
       propertyPath: m_Name
       value: LavaFloor
@@ -324,6 +332,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2927446962798470421, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2927446962798470421, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2927446962798470427, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
       propertyPath: m_Name
       value: LavaFloor
@@ -379,7 +395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &121004305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,11 +416,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Has Ganado!
-
-    Fin de la Partida
-
-    :D'
+  m_text: Game Over
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -488,9 +500,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121004304}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -2.3283064e-10, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1775241911}
@@ -498,7 +510,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1977.5461, y: 3662.1252}
   m_SizeDelta: {x: 650, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &153804598
@@ -621,6 +633,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2927446962798470421, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2927446962798470421, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2927446962798470427, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
       propertyPath: m_Name
       value: LavaFloor
@@ -641,6 +661,7 @@ GameObject:
   - component: {fileID: 251304347}
   - component: {fileID: 251304346}
   - component: {fileID: 251304345}
+  - component: {fileID: 251304350}
   m_Layer: 0
   m_Name: ReturnPlayerLv1
   m_TagString: Destructor
@@ -676,6 +697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 1
+  "da\xF1o": 20
 --- !u!54 &251304346
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -687,7 +709,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
@@ -756,6 +778,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251304343}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &251304350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251304343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e8021ba476977342aa4999047e1066f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &285964702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3417284366608797026, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -1803,6 +1837,14 @@ PrefabInstance:
     - target: {fileID: 2927446962798470420, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2927446962798470421, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2927446962798470421, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2927446962798470427, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
       propertyPath: m_Name
@@ -5095,7 +5137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1854964003
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5103,9 +5145,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854964002}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -2.3283064e-10, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1775241911}
@@ -5113,7 +5155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1977.5461, y: 3662.1252}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1854964004
@@ -6093,6 +6135,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 493858163, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061745581, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
+      propertyPath: maxVida
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061745581, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
+      propertyPath: actualVida
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3468247962304657571, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -6140,6 +6194,10 @@ PrefabInstance:
     - target: {fileID: 4281341640843747865, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
       propertyPath: m_Name
       value: Perrito
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931721796270141974, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}

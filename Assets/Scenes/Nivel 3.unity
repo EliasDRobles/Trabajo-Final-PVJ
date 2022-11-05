@@ -910,6 +910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 3
+  "da\xF1o": 1
 --- !u!54 &175215044
 Rigidbody:
   m_ObjectHideFlags: 0
