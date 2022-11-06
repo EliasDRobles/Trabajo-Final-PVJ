@@ -26,7 +26,7 @@ public class PlayerMov : MonoBehaviour
     public float tiempoInmortal = 1.0f;
     public Image sistemaVida;
 
-    public float MaxVida { get => maxVida; set => maxVida = value; }
+    public float ActualVida { get => actualVida; set => actualVida = value; }
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +43,7 @@ public class PlayerMov : MonoBehaviour
         y = Input.GetAxis("Vertical");
         transform.Rotate(0, x * Time.deltaTime * VelRot, 0);
         transform.Translate(0, 0, y * Time.deltaTime * VelMov);
+        sistemaVida.fillAmount = actualVida / maxVida;
 
 
         anim.SetFloat("velX", x); // llamamos la animacion de los pies para moverse mientras camina

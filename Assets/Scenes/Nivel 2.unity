@@ -1302,6 +1302,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2061745581, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
+      propertyPath: maxVida
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061745581, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
+      propertyPath: actualVida
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3468247962304657571, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
       propertyPath: m_RootOrder
       value: 3

@@ -16,17 +16,17 @@ public class ResetPlayer : MonoBehaviour
         switch (nivel)
         {
             case 1:
-                player.MaxVida = player.MaxVida - daño;
+                player.ActualVida = player.ActualVida - daño;
                 other.transform.position = new Vector3(-50, 16, 15);
                     
         break;
             case 2:
                 other.transform.position = new Vector3(0, 17, 15);
-                player.MaxVida = player.MaxVida - daño;
+                player.ActualVida = player.ActualVida - daño;
                 break;
             case 3:
                 other.transform.position = new Vector3(50, 16, 15);
-                player.MaxVida = player.MaxVida - daño;
+                player.ActualVida = player.ActualVida - daño;
                 break;
             case 4:
                 other.transform.position = new Vector3(0, 2, 0);

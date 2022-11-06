@@ -5470,8 +5470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sistemaVida: {fileID: 308378721}
-  vidaActual: 0
-  vidaMaxima: 0
+  vidaActual: 100
+  vidaMaxima: 100
 --- !u!4 &1896775265 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3417284366608797026, guid: 83d852740e361a745baab19dd97974d0, type: 3}
