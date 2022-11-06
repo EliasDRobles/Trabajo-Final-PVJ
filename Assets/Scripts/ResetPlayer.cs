@@ -37,7 +37,7 @@ public class ResetPlayer : MonoBehaviour
                 }
                 if (other.CompareTag("Premio"))
                 {
-                    reward.transform.position = new Vector3(9, (float)15.5, -4);
+                    reward.transform.position = new Vector3((float)7.5, (float)15.5, 0);
                 }
                 break;
             case 3:
@@ -48,7 +48,7 @@ public class ResetPlayer : MonoBehaviour
                 }
                 if (other.CompareTag("Premio"))
                 {
-                    reward.transform.position = new Vector3(6, (float)15.5, -44);
+                    reward.transform.position = new Vector3(-8, (float)15.5, (float)-64.25);
                 }
                 break;
         }
