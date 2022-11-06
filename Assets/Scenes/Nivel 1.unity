@@ -5452,26 +5452,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2927446962798470420, guid: 6539ad1b1034b944d95dbad76f43c6e8, type: 3}
   m_PrefabInstance: {fileID: 563808294}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1893295993 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4281341640843747865, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
-  m_PrefabInstance: {fileID: 2119112283392065492}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1893296001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1893295993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d72c88ec184554ebb91dfa3af18e02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sistemaVida: {fileID: 308378721}
-  vidaActual: 100
-  vidaMaxima: 100
 --- !u!4 &1896775265 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3417284366608797026, guid: 83d852740e361a745baab19dd97974d0, type: 3}
@@ -6314,13 +6294,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2061745581, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
+      propertyPath: perder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061745581, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
       propertyPath: maxVida
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2061745581, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
       propertyPath: actualVida
-      value: 100
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2061745581, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
+      propertyPath: sistemaVida
+      value: 
+      objectReference: {fileID: 308378721}
     - target: {fileID: 3468247962304657571, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
       propertyPath: m_RootOrder
       value: 5

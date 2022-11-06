@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMov : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class PlayerMov : MonoBehaviour
     public Image sistemaVida;
 
     public float ActualVida { get => actualVida; set => actualVida = value; }
+
+    public int perder;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +46,7 @@ public class PlayerMov : MonoBehaviour
         y = Input.GetAxis("Vertical");
         transform.Rotate(0, x * Time.deltaTime * VelRot, 0);
         transform.Translate(0, 0, y * Time.deltaTime * VelMov);
-        sistemaVida.fillAmount = actualVida / maxVida;
+      
 
 
         anim.SetFloat("velX", x); // llamamos la animacion de los pies para moverse mientras camina
@@ -58,12 +61,16 @@ public class PlayerMov : MonoBehaviour
             Jump(); // llamamos el metodo salto
         }
 
+          sistemaVida.fillAmount = actualVida / maxVida;
+
         if (actualVida - maxVida >= 2)
+        {
             actualVida = maxVida;
-
+        }
         if (actualVida <= 0)
+        {
             Muerte();
-
+        }
     }
     // metodo para ver si estamos tocando tierra o no y evitar saltar varias veces
     private void CheckTierra() { 
@@ -102,14 +109,17 @@ public class PlayerMov : MonoBehaviour
     public void Muerte()
     {
         Destroy(this.gameObject);
-    }
+        SceneManager.LoadScene(perder);
 
-   /* IEnumerator TiempoInmortal()
-    {
-        inmortal = true;
-        yield return new WaitForSeconds(tiempoInmortal);
-        inmortal = false;
     }
-   */
+   
+
+    /* IEnumerator TiempoInmortal()
+     {
+         inmortal = true;
+         yield return new WaitForSeconds(tiempoInmortal);
+         inmortal = false;
+     }
+    */
 
 }
