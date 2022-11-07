@@ -1439,7 +1439,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2061745581, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
       propertyPath: perder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2061745581, guid: c1f37864ecdfc484395f80eee01608b2, type: 3}
       propertyPath: maxVida
@@ -3129,7 +3129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f98a2af541e8634e9f0eebf62ff3deb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroScena: 2
+  numeroScena: 3
 --- !u!1 &869550968
 GameObject:
   m_ObjectHideFlags: 0
