@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
@@ -12,8 +13,10 @@ public class MainMenu : MonoBehaviour
     [Header("Menus")]
     public GameObject mainMenu;
     public GameObject optionsMenu;
-    public GameObject playMenu;  
+    public GameObject playMenu;
 
+    
+    
     public void OpenMenu( GameObject menu)
     {
         mainMenu.SetActive(false);
@@ -21,5 +24,16 @@ public class MainMenu : MonoBehaviour
         playMenu.SetActive(false);
 
         menu.SetActive(true);
+    }
+    public void PlayGame(string level) 
+    {
+        SceneManager.LoadScene(level);
+       
+    
+    }
+    public void QuitGame() {
+    
+        Application.Quit();
+    
     }
 }
