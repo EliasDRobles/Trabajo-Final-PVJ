@@ -8,11 +8,11 @@ public class ResetPlayer : MonoBehaviour
 
     [SerializeField]
     private int nivel;
-    public float daño = 1.0f;
+    public float daño = 1.0f; // Permite instanciar el daño, este tendra el valor de 1
 
     private void OnTriggerEnter(Collider other)
     {
-        PlayerMov player = GameObject.Find("Perrito").GetComponent<PlayerMov>();
+        PlayerMov player = GameObject.Find("Perrito").GetComponent<PlayerMov>(); 
         RewardBehaviour reward = GameObject.Find("Premio").GetComponent<RewardBehaviour>();
         switch (nivel)
         {
