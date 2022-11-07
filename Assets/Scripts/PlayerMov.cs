@@ -20,16 +20,14 @@ public class PlayerMov : MonoBehaviour
     private float fuerzaSalto; // Fuerza de salto
     public LayerMask Mask; // layer del suelo para indicar si esta en el suelo
 
-    public float maxVida;
-    public float actualVida;
+    public float maxVida; // Permite que nuestro Player posea una Vida maxima 
+    public float actualVida; // Permite que nuestro Player posea Vida actual
 
-    public bool inmortal = false;
-    public float tiempoInmortal = 1.0f;
-    public Image sistemaVida;
+    public Image sistemaVida; // Permite instanciar una imagen que se usara como nuestra Barra de Vida
 
-    public float ActualVida { get => actualVida; set => actualVida = value; }
+    public float ActualVida { get => actualVida; set => actualVida = value; } // Permite que nuestra vida actual, obtenga los valores de nuestra Vida Maxima, que se instanciara en cada Nivel
 
-    public int perder;
+    public int perder; // Permite instanciar el escenario de GameOver que se visualizara al quedarnos sin Vida Actual
     // Start is called before the first frame update
     void Start()
     {
@@ -61,15 +59,15 @@ public class PlayerMov : MonoBehaviour
             Jump(); // llamamos el metodo salto
         }
 
-          sistemaVida.fillAmount = actualVida / maxVida;
+          sistemaVida.fillAmount = actualVida / maxVida; // Permite visualizar la barra de vida/vida maxima mediante una imagen instanciada
 
-        if (actualVida - maxVida >= 2)
+        if (actualVida - maxVida >= 2) // Si se cumplen los siguientes requisitos 
         {
-            actualVida = maxVida;
+            actualVida = maxVida; // La Vida Actual es igual a la Vida Maxima
         }
-        if (actualVida <= 0)
+        if (actualVida <= 0) // Si se cumplen los siguientes requisitos
         {
-            Muerte();
+            Muerte(); // Se llamara al metodo Muerte
         }
     }
     // metodo para ver si estamos tocando tierra o no y evitar saltar varias veces
@@ -93,33 +91,11 @@ public class PlayerMov : MonoBehaviour
 
     }
 
-   /* public void QuitarVida(float daño)
+    public void Muerte() // Metodo que nos permitira saber cuando el Player Muere al cumplir los siguientes requisitos
     {
-        if (inmortal) return;
-
-        actualVida -= daño;
-        StartCoroutine(TiempoInmortal());
-    }
- 
-    public void DarVida(float vida)
-    {
-        actualVida += vida;
-    } */
-
-    public void Muerte()
-    {
-        Destroy(this.gameObject);
-        SceneManager.LoadScene(perder);
+        Destroy(this.gameObject); // Se destruye al Player
+        SceneManager.LoadScene(perder); // Llama el escenario Perder/GameOver
 
     }
-   
-
-    /* IEnumerator TiempoInmortal()
-     {
-         inmortal = true;
-         yield return new WaitForSeconds(tiempoInmortal);
-         inmortal = false;
-     }
-    */
 
 }
