@@ -12,11 +12,12 @@ public class ResetPlayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        PlayerMov player = GameObject.Find("Perrito").GetComponent<PlayerMov>();
+        PlayerBehaviour player = GameObject.Find("Perrito").GetComponent<PlayerBehaviour>();
         RewardBehaviour reward = GameObject.Find("Premio").GetComponent<RewardBehaviour>();
         switch (nivel)
         {
             case 1:
+                //Devuelve al premio y jugador a su posicion original del nivel 1
                 if (other.CompareTag("Player"))
                 {
                     player.transform.position = new Vector3(-50, 16, 15);
@@ -29,6 +30,7 @@ public class ResetPlayer : MonoBehaviour
                     reward.transform.position = new Vector3((float)-55.61, (float)15.5, (float)44.3);
                 }
                 break;
+            //Devuelve al premio y jugador a su posicion original del nivel 2
             case 2:
                 if (other.CompareTag("Player"))
                 {
@@ -40,6 +42,7 @@ public class ResetPlayer : MonoBehaviour
                     reward.transform.position = new Vector3((float)7.5, (float)15.5, 0);
                 }
                 break;
+            //Devuelve al premio y jugador a su posicion original del nivel 3
             case 3:
                 if (other.CompareTag("Player"))
                 {

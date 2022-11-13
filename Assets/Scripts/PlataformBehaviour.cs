@@ -38,7 +38,7 @@ public class PlataformBehaviour : MonoBehaviour
             Destroy(transform.gameObject);
         }        
     }
-
+    //Permite transportar al jugador cuando se mueva emparentandose
     private void OnCollisionEnter(Collision collision)
     {
         if (transportaPersonaje)
@@ -46,7 +46,7 @@ public class PlataformBehaviour : MonoBehaviour
             collision.collider.transform.SetParent(transform);
         }
     }
-
+    //Se desemparente con el jugador
     private void OnCollisionExit(Collision collision)
     {
         if(transportaPersonaje)

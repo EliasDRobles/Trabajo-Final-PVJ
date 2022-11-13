@@ -10,7 +10,5 @@ public class RewardBehaviour : MonoBehaviour
     void Update()
     {
         transform.Rotate(0, giro * Time.deltaTime, 0);
-    }
-
-   
+    }   
 }

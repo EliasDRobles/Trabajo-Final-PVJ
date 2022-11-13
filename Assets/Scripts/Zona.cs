@@ -6,9 +6,6 @@ using UnityEngine.SceneManagement;
 public class Zona : MonoBehaviour
 {
     public int numeroScena;
-   
-   
-       
     private void OnTriggerEnter(Collider other)
     {
         

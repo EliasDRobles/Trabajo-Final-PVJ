@@ -4,23 +4,14 @@ using UnityEngine;
 
 public class ButtonBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
+        //Obtenemos el GameObject DoorSystem
         DoorSystem door = GameObject.Find("DoorSystem").GetComponent<DoorSystem>();
+        //Si el premio colisiona con el boton mientras la puerta esta cerrada
         if (other.CompareTag("Premio") && (door.Closed))
         {
+            //Se abre la puerta
             door.OpenDoor();
         }
     }
