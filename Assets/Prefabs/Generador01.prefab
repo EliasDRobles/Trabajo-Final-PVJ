@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c9719f61813d14e942ab24728a6074, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plataformaDesplazable: {fileID: 6664129320402522362, guid: ee1e62faebd67d04f961afac76c56aa7, type: 3}
+  plataformaDesplazable: {fileID: 8338122860187377386, guid: 83d852740e361a745baab19dd97974d0, type: 3}
   tiempoInicial: 0
-  intervalo: 5
+  intervalo: 8

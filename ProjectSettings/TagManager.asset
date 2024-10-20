@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Bandera
   - Destructor
-  - Objeto
   - Premio
   layers:
   - Default
@@ -15,8 +14,8 @@ TagManager:
   - enTierra
   - Water
   - UI
-  - Objeto
-  - Pared
+  - 
+  - 
   - 
   - 
   - 
