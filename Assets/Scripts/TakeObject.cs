@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TakeObject : MonoBehaviour
 {
-    [SerializeField] private GameObject manoPoint;
+    [SerializeField] private GameObject point;
 
     private GameObject pickedObject = null; // para saber si tenemos un objeto o no en la mano 
     
@@ -22,6 +22,9 @@ public class TakeObject : MonoBehaviour
 
                 pickedObject.gameObject.transform.SetParent(null);
 
+                RewardBehaviour objectReward = pickedObject.GetComponent<RewardBehaviour>();
+                objectReward.IsRotating = true;
+
                 pickedObject = null;
             }
         }
@@ -38,16 +41,18 @@ public class TakeObject : MonoBehaviour
 
                 other.GetComponent<Rigidbody>().isKinematic = true;
 
-                other.transform.position = manoPoint.transform.position;
+                
 
-                other.gameObject.transform.SetParent(manoPoint.gameObject.transform);
+                other.transform.position = point.transform.position;
+
+                other.gameObject.transform.SetParent(point.gameObject.transform);
 
                 pickedObject = other.gameObject;
+
+                RewardBehaviour objectReward = pickedObject.GetComponent<RewardBehaviour>();
+                objectReward.IsRotating = false;
             
             }
         }
-
-
-
     }
 }

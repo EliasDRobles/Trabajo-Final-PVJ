@@ -18,7 +18,7 @@ public class PlataformCoroutine : MonoBehaviour
 
     IEnumerator MuevePlataforma() //Intanciamos la corrutina
     {
-        int i = 1; //Se declara la variable i, siendo esta el índice del array
+        int i = 0; //Se declara la variable i, siendo esta el índice del array
         Vector3 nuevaPosicion = new Vector3(puntosControl[i].position.x, plataforma.transform.position.y, puntosControl[i].position.z); //Se crea un Vector3 que toma la posición del punto de control
         while (true) //Este while nos permite crear un bucle infinito, por lo que la plataforma nunca dejará de moverse entre los puntos de control
         {
