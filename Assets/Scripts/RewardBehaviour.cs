@@ -7,8 +7,22 @@ using UnityEngine;
 public class RewardBehaviour : MonoBehaviour
 {
     private float giro = 50f;
+    [SerializeField]
+    private bool isRotating;
+    public bool IsRotating { get => isRotating; set => isRotating = value; }
+    private void Start()
+    {
+        isRotating = true;
+    }
     void Update()
     {
-        transform.Rotate(0, giro * Time.deltaTime, 0);
+        if (isRotating)
+        {
+            transform.Rotate(0, giro * Time.deltaTime, 0);
+        }
+        else
+        {
+            transform.rotation = new Quaternion(0,0,0,0);
+        }
     }   
 }
