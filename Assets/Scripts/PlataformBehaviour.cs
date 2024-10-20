@@ -39,7 +39,7 @@ public class PlataformBehaviour : MonoBehaviour
         }        
     }
     //Permite transportar al jugador cuando se mueva emparentandose
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (transportaPersonaje)
         {
